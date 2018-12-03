@@ -5,7 +5,6 @@ ARG spark_hdp=$spark-bin-hadoop2.7
 
 RUN apt-get update \
     && apt-get install -y scala \
-    && wget http://d3kbcqa49mib13.cloudfront.net/$spark_hdp.tgz -O /$spark_hdp.tgz \
     && wget http://us.mirrors.quenda.co/apache/spark/$spark/$spark_hdp.tgz -O /$spark_hdp.tgz \
     && tar -zxvf /$spark_hdp.tgz -C /opt/ \
     && rm /$spark_hdp.tgz
