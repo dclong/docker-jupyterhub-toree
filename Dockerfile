@@ -1,6 +1,6 @@
 FROM dclong/jupyterhub-jdk
 
-ARG spark=spark-2.4.0
+ARG spark=spark-2.3.2
 ARG spark_hdp=$spark-bin-hadoop2.7
 
 RUN apt-get update \
