@@ -1,6 +1,6 @@
 FROM dclong/jupyterhub-jdk
 
-ARG spark=spark-2.2.1-bin-hadoop2.7
+ARG spark=spark-2.4.0-bin-hadoop2.7
 
 RUN apt-get update \
     apt-get install -y scala \
